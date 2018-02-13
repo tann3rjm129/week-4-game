@@ -1,0 +1,84 @@
+
+html {box-sizing: border-box;
+			}
+/*font*/
+@font-face {
+		font-family: gameboy;
+		src: url(gameboy-font.ttf);
+}
+
+body  {		box-sizing: border-box;
+			background-image: url("../images/stadium.jpg");
+			margin-right: 0px;
+			margin-left: 0px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			font: gameboy;
+		}
+
+
+header {	box-sizing: border-box;
+			height: 120px;
+  			width: 100%;
+  			margin-top: -10px;
+  			margin-left: 0px;
+  			align-items: center;
+			background: white;
+			border-bottom: 4px solid red;
+			font: gameboy;
+
+				}
+
+h1 {font-size: 22px;}
+
+#container1 {box-sizing: border-box;
+			float: left;
+			margin-top: 25px;
+			margin-left: 10%;
+			margin-right: 10%;
+			z-index: 1;
+			font: gameboy;
+			}
+
+.pokemon-images {height: 200px;
+				width: 200px;
+				display: inline;
+				float: left;
+				border-radius: 15px;
+				margin-left: 20px;
+				margin-right: 20px;}
+
+#container2 {clear: both;
+			box-sizing: border-box;
+			float: left;
+			width: 80%;
+			margin-top: 25px;
+			margin-left: 10%;
+			margin-right: 10%;
+			z-index: 1;
+			font: gameboy;
+			}
+
+#container3 {clear: both;
+			box-sizing: border-box;
+			border-style: 2px solid red;
+			float: left;
+			width: 80%;
+			margin-top: 10px;
+			margin-left: 10%;
+			margin-right: 10%;
+			z-index: 1;
+			font: gameboy;
+			margin-bottom: 50px;
+			}
+
+.pokemonz {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.pokemon {
+	height: 200px;
+	width: 200px; }
