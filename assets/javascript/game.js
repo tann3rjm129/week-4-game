@@ -43,9 +43,9 @@ $(document).on("click", ".pokemon", function adding() {
 // on click adds numbers associated with images
 	var number = parseInt($(this).attr("image-data"));
 	console.log(number);
-	var result = result + number;
-	console.log(result);
-	$("#score").html("Total: " + result);
+// not registering result as a number? it's declared as a global as integer?
+	result = result + number;
+	$("#score").text("Total: " + result);
 
 // if statement on if it reaches target number
 
@@ -55,6 +55,7 @@ $(document).on("click", ".pokemon", function adding() {
 		$("#lose").html("Losses: " + loss);
 // resets addition variable and restarts game
 		result = 0;
+		$(".pokemonz").empty();
 		startup();
 	}
 
@@ -64,6 +65,7 @@ $(document).on("click", ".pokemon", function adding() {
 		$("#win").html("Wins: " + wins);
 // resets addition variable and restarts game
 		result = 0;
+		$(".pokemonz").empty();
 		startup();
 
 	}
