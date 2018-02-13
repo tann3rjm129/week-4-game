@@ -1,7 +1,6 @@
 
-// define variables 
+$(document).ready( function () {
 
-// depends on image
 var imageValues;
 // randomized between 19-120
 var targetValue= 19 + Math.floor(Math.random() * 101);
@@ -72,3 +71,5 @@ $(document).on("click", ".pokemon", function adding() {
 
 
 ;});
+
+});
