@@ -54,6 +54,7 @@ $(document).on("click", ".pokemon", function adding() {
 		$("#lose").html("Losses: " + loss);
 // resets addition variable and restarts game
 		result = 0;
+		targetValue = 19 + Math.floor(Math.random() * 101);
 		$(".pokemonz").empty();
 		startup();
 	}
@@ -64,6 +65,7 @@ $(document).on("click", ".pokemon", function adding() {
 		$("#win").html("Wins: " + wins);
 // resets addition variable and restarts game
 		result = 0;
+		targetValue = 19 + Math.floor(Math.random() * 101);
 		$(".pokemonz").empty();
 		startup();
 
